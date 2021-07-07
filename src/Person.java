@@ -1,0 +1,63 @@
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int tahunLahir;
+    private int tanggalLahir;
+    private String bulanLahir;
+    private String tempatKelahiran;
+    private String domisili;
+
+    public String getBulanLahir() {
+        return bulanLahir;
+    }
+    public void setBulanLahir(String bulanLahir) {
+        this.bulanLahir = bulanLahir;
+    }
+    public int getTahunLahir() {
+        return tahunLahir;
+    }
+    public void setTahunLahir(int tahunLahir) {
+        this.tahunLahir = tahunLahir;
+    }
+    public int getTanggalLahir() {
+        return tanggalLahir;
+    }
+    public void setTanggalLahir(int tanggalLahir) {
+        this.tanggalLahir = tanggalLahir;
+    }
+    public String getTempatKelahiran() {
+        return tempatKelahiran;
+    }
+    public void setTempatKelahiran(String tempatKelahiran) {
+        this.tempatKelahiran = tempatKelahiran;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public String getDomisili() {
+        return domisili;
+    }
+    public void setDomisili(String domisili) {
+        this.domisili = domisili;
+    }
+
+    public void getFullName(){
+        System.out.println("Nama Lengkap");
+        System.out.println(this.firstName+ " " + this.lastName);
+    }
+
+    public void getTTL(){
+        System.out.println("Tempat,tanggal lahir");
+        System.out.println(this.tempatKelahiran+ "," + this.tanggalLahir+" "+this.bulanLahir+" "+this.tahunLahir);
+    }
+
+}
