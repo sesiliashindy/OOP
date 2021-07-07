@@ -7,39 +7,26 @@ public class Person {
     private String tempatKelahiran;
     private String domisili;
 
-    public String getBulanLahir() {
-        return bulanLahir;
-    }
     public void setBulanLahir(String bulanLahir) {
         this.bulanLahir = bulanLahir;
     }
-    public int getTahunLahir() {
-        return tahunLahir;
-    }
+
     public void setTahunLahir(int tahunLahir) {
         this.tahunLahir = tahunLahir;
     }
-    public int getTanggalLahir() {
-        return tanggalLahir;
-    }
+    
     public void setTanggalLahir(int tanggalLahir) {
         this.tanggalLahir = tanggalLahir;
     }
-    public String getTempatKelahiran() {
-        return tempatKelahiran;
-    }
+    
     public void setTempatKelahiran(String tempatKelahiran) {
         this.tempatKelahiran = tempatKelahiran;
     }
-    public String getFirstName() {
-        return firstName;
-    }
+    
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getLastName() {
-        return lastName;
-    }
+   
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
