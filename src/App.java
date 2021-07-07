@@ -17,13 +17,14 @@ public class App {
         Pendidikan.setSmp("SMPN 33 Makassar");
         Pendidikan.setSma("SMA Frater Kumala Makassar");
         Pendidikan.setKampus("Universitas Hasanuddin");
-           
+        
+        Boolean repeat = false;
+
+        do{
         System.out.println("Pilihan:\n1.Profil\n2.Pendidikan\n3.Exit");
         Scanner input = new Scanner(System.in);
         System.out.println("Masukkan pilihan: ");
         int number = input.nextInt();
-        
-        while(true){
             switch (number) {
                 case 1:
                     person.getFullName();
@@ -38,16 +39,17 @@ public class App {
                 default:
                     System.out.println("Invalid Number");
                     break;
-            }
+            } 
             System.out.println("Apakah anda ingin menginput ulang (Y/N)? ");
             String n = input.next();
-            if (n=="Y") {
-                
-            } else if (n=="N"){
-                System.exit(0);
+            if (n.equalsIgnoreCase("Y")) {
+                repeat = true;
+            } else if (n.equalsIgnoreCase("N")){
+                repeat = false;
             } else {
-                System.exit(0);
+                repeat = false;
             }
-        }
+        } while (repeat);
+  
     }
 }
