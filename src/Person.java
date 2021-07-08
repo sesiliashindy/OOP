@@ -3,12 +3,17 @@ public class Person {
     private String lastName;
     private int tahunLahir;
     private int tanggalLahir;
+    private int tahunSekarang;
     private String bulanLahir;
     private String tempatKelahiran;
     private String domisili;
 
     public void setBulanLahir(String bulanLahir) {
         this.bulanLahir = bulanLahir;
+    }
+    
+    public void setTahunSekarang(int tahunSekarang) {
+        this.tahunSekarang = tahunSekarang;
     }
 
     public void setTahunLahir(int tahunLahir) {
@@ -44,7 +49,8 @@ public class Person {
 
     public void getTTL(){
         System.out.println("Tempat,tanggal lahir");
-        System.out.println(this.tempatKelahiran+ "," + this.tanggalLahir+" "+this.bulanLahir+" "+this.tahunLahir);
+        System.out.println(tempatKelahiran+ "," + tanggalLahir+" "+bulanLahir+" "+tahunLahir);
+        System.out.println("Umur: "+(tahunSekarang-tahunLahir+" "+"tahun"));
     }
 
 }

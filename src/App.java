@@ -9,6 +9,7 @@ public class App {
         person.setTempatKelahiran("Dili");
         person.setTanggalLahir(14);
         person.setBulanLahir("Juni");
+        person.setTahunSekarang(2021);
         person.setTahunLahir(1998);
         
         person.setDomisili("Makassar");
@@ -18,11 +19,11 @@ public class App {
         Pendidikan.setSma("SMA Frater Kumala Makassar");
         Pendidikan.setKampus("Universitas Hasanuddin");
         
-        Boolean repeat = false;
+        Boolean repeat = true;
+        Scanner input = new Scanner(System.in);
 
         do{
         System.out.println("Pilihan:\n1.Profil\n2.Pendidikan\n3.Exit");
-        Scanner input = new Scanner(System.in);
         System.out.println("Masukkan pilihan: ");
         int number = input.nextInt();
             switch (number) {
@@ -48,8 +49,10 @@ public class App {
                 repeat = false;
             } else {
                 repeat = false;
-            }
-        } while (repeat);
-  
+            } 
+
+        } while (repeat); 
+        input.close(); 
     }
+    
 }
